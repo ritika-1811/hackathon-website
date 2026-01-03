@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dayflow | HRMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dayflow</h1>
+    <p>Human Resource Management System</p>
+</header>
+
+<nav>
+    <button onclick="showSection('dashboard')">Dashboard</button>
+    <button onclick="showSection('employees')">Employees</button>
+    <button onclick="showSection('attendance')">Attendance</button>
+    <button onclick="showSection('payroll')">Payroll</button>
+</nav>
+
+<section id="dashboard" class="content">
+    <h2>Dashboard</h2>
+    <div class="cards">
+        <div class="card">Total Employees: 25</div>
+        <div class="card">Present Today: 20</div>
+        <div class="card">Pending Leaves: 3</div>
+    </div>
+</section>
+
+<section id="employees" class="content hidden">
+    <h2>Employee Management</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Amit</td>
+            <td>Developer</td>
+            <td>Active</td>
+        </tr>
+        <tr>
+            <td>Riya</td>
+            <td>HR</td>
+            <td>Active</td>
+        </tr>
+    </table>
+</section>
+
+<section id="attendance" class="content hidden">
+    <h2>Attendance</h2>
+    <p>Real-time attendance tracking</p>
+    <button>Mark Attendance</button>
+</section>
+
+<section id="payroll" class="content hidden">
+    <h2>Payroll</h2>
+    <p>Salary processing and reports</p>
+    <button>Generate Payroll</button>
+</section>
+
+<footer>
+    <p>© 2026 Dayflow | Hackathon Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<section id="future">
+  <h2>Future Scope</h2>
+
+  <ul>
+    <li>Secure authentication with role-based access control</li>
+    <li>Cloud deployment for remote access</li>
+    <li>Automated payroll processing and salary slips</li>
+    <li>Attendance using biometric or face recognition</li>
+    <li>Performance evaluation and analytics</li>
+    <li>Employee self-service portal</li>
+  </ul>
+</section>
+<section id="future-scope">
+  <h2>Future Scope</h2>
+  <p class="future-subtitle">
+    The HRMS can be enhanced in the future to support advanced HR operations
+    and enterprise-level scalability.
+  </p>
+
+  <div class="future-cards">
+
+    <div class="future-card">
+      <span class="icon">🔐</span>
+      <h3>Secure Authentication</h3>
+      <p>Role-based login system with encrypted authentication for Admin and Employees.</p>
+    </div>
+
+    <div class="future-card">
+      <span class="icon">☁️</span>
+      <h3>Cloud Deployment</h3>
+      <p>Deploying the application on cloud platforms for remote access and scalability.</p>
+    </div>
+
+    <div class="future-card">
+      <span class="icon">🧾</span>
+      <h3>Automated Payroll</h3>
+      <p>Salary calculation, tax deductions, and downloadable payslips.</p>
+    </div>
+
+    <div class="future-card">
+      <span class="icon">📊</span>
+      <h3>Performance Analytics</h3>
+      <p>Employee performance tracking using reports and visual dashboards.</p>
+    </div>
+
+    <div class="future-card">
+      <span class="icon">📱</span>
+      <h3>Mobile Application</h3>
+      <p>Dedicated mobile app for employees to manage HR tasks on the go.</p>
+    </div>
+
+    <div class="future-card">
+      <span class="icon">🤖</span>
+      <h3>AI-Based Attendance</h3>
+      <p>Face recognition or biometric-based attendance system.</p>
+    </div>
+
+  </div>
+</section>
+<script>loadEmployees();</script>
+<script>loadLeaves();</script>
+

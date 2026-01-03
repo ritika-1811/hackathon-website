@@ -22,15 +22,15 @@ It provides a centralized platform for HR/Admin and Employees to manage daily HR
 - Access basic payroll information  
 
  Tech Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** Python (Flask)  
-- **Database:** SQLite  
-- **API Type:** REST APIs  
-- **Version Control:** GitHub  
+- *Frontend:* HTML, CSS, JavaScript  
+- *Backend:* Python (Flask)  
+- *Database:* SQLite  
+- *API Type:* REST APIs  
+- *Version Control:* GitHub  
 
  System Architecture
 1. User interacts with the frontend UI  
-2. Frontend sends requests using JavaScript `fetch()`  
+2. Frontend sends requests using JavaScript fetch()  
 3. Flask backend processes requests  
 4. Data is stored and retrieved from SQLite database  
-5. Response is sent back to frontend  
+5. Response is sent back to frontend

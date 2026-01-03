@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>HRMS Dashboard</h1>
+
+<div class="cards">
+    <div class="card">Employees<br><b>25</b></div>
+    <div class="card">Attendance<br><b>20 Present</b></div>
+    <div class="card">Leaves<br><b>5 Pending</b></div>
+</div>
+
+</body>
+</html>
+<h2>Attendance</h2>
+<input id="att_name" placeholder="Employee Name">
+<input id="att_date" type="date">
+<select id="att_status">
+  <option>Present</option>
+  <option>Absent</option>
+</select>
+<button onclick="markAttendance()">Submit</button>
+<h2>Leave Request</h2>
+<input id="leave_name" placeholder="Employee Name">
+<input id="leave_reason" placeholder="Reason">
+<button onclick="applyLeave()">Apply</button>
+
+<ul id="leave_list"></ul>
+<h2>Payroll</h2>
+<input id="pay_name" placeholder="Employee Name">
+<input id="pay_salary" placeholder="Salary">
+<input id="pay_month" placeholder="Month">
+<button onclick="addPayroll()">Generate</button>
